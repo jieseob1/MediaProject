@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pink">#fe346e</color>
+    <color name="accent">#5C00FF</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="lightblue">#0585EC</color>
+    <color name="gray">#7d7d7d</color>
+    <color name="lightgray">#9b9b9b</color>
+    <color name="morelightgray">#f3f3f3</color>
+    <color name="closetowhite">#9b9b9b</color>
+    <color name="homefragmentrecyclerviewbackgroundcolor">#fafafa</color>
+
+</resources>

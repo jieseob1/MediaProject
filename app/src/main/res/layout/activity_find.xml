@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FindActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/findBackArrow"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        tools:context=".FindActivity">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:layout_gravity="left"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#1e1e1e"
+            android:textSize="20sp"
+            tools:text="비밀번호를 잊으셨나요?"
+            android:id="@+id/findPassword"/>
+
+        <TextView
+            android:text="비밀번호를 찾으시려는 이메일을 입력해주세요.임시 비밀번호를 발급헤드립니다."
+            android:layout_width="220dp"
+            android:gravity="left"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"
+            android:textColor="#191919"/>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_input1"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_weight="3"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:gravity="left|center_vertical"
+                android:text="이메일"
+                android:textColor="@color/gray"
+                android:textSize="11sp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/editTextUserEmail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@null"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:textColor="#000000"
+                android:textSize="11sp"
+                android:inputType="textEmailAddress" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonFind"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:background="@drawable/round_button_pink"
+            android:gravity="center"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:text="이메일 전송"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/textviewSendMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</RelativeLayout>

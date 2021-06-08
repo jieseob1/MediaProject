@@ -1,0 +1,106 @@
+<!--
+Author: Sally,Victor AppForest.kr
+Date: 1.4.2021
+Description: Login
+Rights: Copyrighted templates and codes. This template and code cannot be used without a license. Also, even if you have purchased a license, it can only be used with one specific end product.
+Copyright 2021 © AppForest.kr
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logoletterver2"
+                android:layout_width="72dp"
+                android:layout_height="90dp"
+                android:src="@drawable/logo_letter_ver_2"
+                android:layout_centerInParent="true"/>
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/symbol_bear_pink"
+                android:layout_below="@id/logoletterver2"
+                android:layout_centerInParent="true"/>
+            
+
+        </RelativeLayout>
+
+        <include layout="@layout/sinppet_login_email_center" />
+        <include layout="@layout/sinppet_login_password_center" />
+
+        <TextView
+            android:id="@+id/textViewFindPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosanscjkkr_regular"
+            android:textStyle="normal"
+            android:layout_gravity="center"
+            android:textSize="11sp"
+            android:textColor="#1e1e1e"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="6sp"
+            tools:text="비밀번호를 잊으셨다면 클릭"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonLogIn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:background="@drawable/round_button_black_v2"
+            android:text="로그인"
+            android:fontFamily="@font/notosanscjkkr_bold"
+            android:textSize="16dp"
+            android:textColor="#FFFFFF" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/notosanscjkkr_regular"
+                android:textSize="11sp"
+                android:text="아직 계정이 없다구미?"
+                android:textColor="#191919" />
+            <TextView
+                android:id="@+id/textViewSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/notosanscjkkr_bold"
+                android:textSize="11sp"
+                android:text="간단한 회원가입"
+                android:textColor="@color/pink"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textviewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="70dp"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"/>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

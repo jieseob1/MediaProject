@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="question">?</string>
+    <string name="push">결제 갱신일의 일주일 전 푸시 알림을 전송합니다.
+    이 설정을 활성화 하지 않는다면 앱내 알림만을 제공합니다.</string>
+    <string name="moreDetails">추가 정보가 있다면 메모를 남겨보세요.</string>
+
+</resources>
